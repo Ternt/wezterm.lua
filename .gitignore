@@ -1,0 +1,7 @@
+# Exclude everything
+**/*
+
+# Excepts
+!*.lua
+!README.md
+!.gitignore
