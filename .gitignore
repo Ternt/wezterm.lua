@@ -3,5 +3,6 @@
 
 # Excepts
 !*.lua
-!README.md
+!.editorconfig
 !.gitignore
+!README.md
