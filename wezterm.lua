@@ -203,7 +203,7 @@ config.colors = {
 
 
 -- fonts
-config.font_size = 14.0
+config.font_size = 12.0
 config.font = wezterm.font({
     family = "Cascadia Mono",
     weight = "Medium"
