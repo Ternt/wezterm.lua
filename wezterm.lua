@@ -187,7 +187,7 @@ config.window_padding = {
 -- key bindings
 config.use_dead_keys = false
 config.disable_default_key_bindings = true
-config.leader = { key = 'A', mods = 'CTRL', timeout_milliseconds = 400 }
+config.leader = { key = 'a', mods = 'CTRL', timeout_milliseconds = 400 }
 
 local function focus_pane(key, direction)
     return {
@@ -369,14 +369,6 @@ config.keys = {
         action = action.TogglePaneZoomState
     },
 --     { key = 'p', mods = 'LEADER', action = choose_project() },
-    {
-        key = 'w',
-        mods = 'LEADER',
-        action = action.ActivateKeyTable({
-            name = 'switch_workspace',
-            one_shot = false,
-        }),
-    },
 }
 
 -- Keys for switching tabs
@@ -432,19 +424,6 @@ config.key_tables = {
 --             }
 --         },
 --     },
-    switch_workspace = {
-        { key = 'k', mods = 'NONE', action = action.SwitchWorkspaceRelative(1) },
-        { key = 'j', mods = 'NONE', action = action.SwitchWorkspaceRelative(-1) },
-        {
-            key = 'f',
-            mods = 'NONE',
-            action = action.Multiple {
-                action.ShowLauncherArgs({ flags = 'WORKSPACES' }),
-                'PopKeyTable'
-            }
-        },
-        { key = 'Escape', action = 'PopKeyTable' }
-    },
 }
 
 
